@@ -1,62 +1,88 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Nuxt />
   </div>
 </template>
 
 <style>
-html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+/* common */
+.wrapper {
+  background: url("/assets/images/background.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  font-family: "HK Grotesk Regular", Arial, Helvetica, sans-serif;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.text-custom-blue {
+  color: #335eea;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.bg-custom-blue {
+  background-color: #335eea;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.text-custom-gray {
+  color: #506690;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.bg-custom-gray {
+  background-color: #506690;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.text-custom-gray-light {
+  color: #6b7c93;
+}
+
+.text-custom-black {
+  color: #161b2d;
+}
+
+.text-custom-green-light {
+  color: #52c2a1;
+}
+
+.font-custom-bold {
+  font-family: "HK Grotesk Bold";
+}
+
+/* fonts */
+@font-face {
+  font-family: "HK Grotesk Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HK Grotesk Regular"),
+    url("/assets/fonts/HKGrotesk-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HK Grotesk Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HK Grotesk Italic"),
+    url("/assets/fonts/HKGrotesk-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HK Grotesk Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HK Grotesk Light"),
+    url("/assets/fonts/HKGrotesk-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HK Grotesk Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HK Grotesk Medium"),
+    url("/assets/fonts/HKGrotesk-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HK Grotesk Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HK Grotesk Bold"),
+    url("/assets/fonts/HKGrotesk-Bold.woff") format("woff");
 }
 </style>
